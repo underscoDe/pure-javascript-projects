@@ -1,0 +1,66 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1e1f26;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+body .container {
+	font-size: 17px;
+	color: #1e1f26;
+}
+
+body .container #quote-box {
+	width: 440px;
+	background: white;
+	border-radius: 10px 10px;
+	padding: 1rem;
+}
+
+@media screen and (max-width: 440px) {
+	body .container #quote-box {
+		width: calc(100vw - 50px);
+	}
+}
+
+body .container #quote-box #text {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-weight: bold;
+}
+
+body .container #quote-box #text i {
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+body .container #quote-box #author {
+	text-align: right;
+	font-weight: bold;
+}
+
+body .container #quote-box .actions {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+body .container #quote-box .actions a {
+	text-decoration: none;
+	background-color: #1e1f26;
+	color: white;
+	padding: .6rem .7rem;
+	outline: 1px solid white;
+	outline-offset: -2px;
+}
+
+body .container #quote-box .actions a i {
+	margin-right: 5px;
+}
